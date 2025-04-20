@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Quiz App</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <div id="app-container">
+        <!-- Auth Page -->
+        <div id="auth-page" class="page active"> <!-- Show Auth page first -->
+            <center><h1>Simple Quiz App</h1></center>
+            <div class="tabs">
+                <button id="login-tab-btn" class="tab-btn active">Login</button>
+                <button id="register-tab-btn" class="tab-btn">Register</button>
+            </div>
+
+            <!-- Login Form -->
+            <form id="login-form" class="auth-form active-form">
+                <h2>Login</h2>
+                <label for="login-email">Email:</label>
+                <input type="email" id="login-email" required>
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" required>
+                <button type="submit">Login</button>
+                <p id="login-message" class="message"></p>
+            </form>
+
+            <!-- Register Form -->
+            <form id="register-form" class="auth-form">
+                <h2>Register</h2>
+                <label for="register-email">Email:</label>
+                <input type="email" id="register-email" required>
+                <label for="register-password">Password:</label>
+                <input type="password" id="register-password" required>
+                <button type="submit">Register</button>
+                <p id="register-message" class="message"></p>
+            </form>
+        </div>
+
+        <!-- Home -->
+        <div id="home-page" class="page">
+            <div class="header">
+                <h2 id="welcome-message">Welcome!</h2>
+                <div>
+                    <button id="dashboard-link-btn" style="display: none;">Admin Dashboard</button>
+                    <button id="logout-btn">Logout</button>
+                </div>
+            </div>
+            <h3>Choose a Quiz:</h3>
+            <div id="quiz-list">
+                <!-- Quiz buttons are here -->
+            </div>
+        </div>
+
+        <!-- Quiz Page -->
+        <div id="quiz-page" class="page">
+             <div class="header">
+                 <h2 id="quiz-title">Quiz</h2>
+                 <button id="back-to-home-btn">Back to Quizzes</button>
+             </div>
+            <div id="question-container">
+                <!-- Questions are here -->
+            </div>
+            <button id="submit-quiz-btn">Submit Answers</button>
+            <div id="score-container" style="display: none;">
+                <h3>Your Score: <span id="score-display"></span></h3>
+                <p>Score saved!</p>
+            </div>
+        </div>
+
+        <!-- Dashboard/Admin -->
+        <div id="dashboard-page" class="page">
+             <div class="header">
+                <h2>Admin Dashboard</h2>
+                 <div>
+                    <button id="admin-back-to-home-btn">View Quizzes</button>
+                    <button id="admin-logout-btn">Logout</button>
+                 </div>
+             </div>
+            <h3>User Scores</h3>
+            <table id="user-scores-table">
+                <thead>
+                    <tr>
+                        <th>User Email</th>
+                        <th>Quiz Scores</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Scores are here -->
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <script src="./scripts/logic.js"></script>
+</body>
+</html>
