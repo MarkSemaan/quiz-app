@@ -369,12 +369,21 @@ document.addEventListener('DOMContentLoaded', () => {
                     ]
                 },
                 {
-                    id: "sql-intro",
-                    title: "SQL Introduction Quiz",
+                    id: 'sql-intro',
+                    title: 'SQL Introduction Quiz',
                     questions: [
                         { questionText: 'If you want to see a list of all the data stored in a table, which SQL command would you use?', options:['SELECT * FROM Table', 'SELECT Column FROM Table', 'UPDATE Table', 'DELETE Table'], correctAnswerIndex: 0},
                         { questionText: 'Which keyword is used to specify the table you want to retrieve data from?', options: ['SELECT', 'WHERE', 'FROM', 'TABLE'], correctAnswerIndex: 2 },
                         { questionText:'Which keyword selects only a specific column from a table?', options: ['FROM Column', 'SELECT Column', 'SELECT *', 'WHERE Column'], correctAnswerIndex: 1}
+                    ]
+                },
+                {
+                    id: 'php-basics',
+                    title: 'PHP Basics Quiz',
+                    questions: [
+                        { questionText: 'In PHP, which symbol must precede a variable name?', options:['&', '#', '%', '$'], correctAnswerIndex: 3},
+                        { questionText: 'What is the most standard and widely accepted convention taught for single line commenting?', options:['<!-- Comment -- >', '// Comment', '/* Comment', '# Comment'], correctAnswerIndex: 1},
+                        { questionText: 'Which PHP function is commonly used to send output (like text or HTML) directly to the browser?', options:['print_r()', 'var_dump()', 'echo', 'display()'], correctAnswerIndex: 2},
                     ]
                 }
             ];
