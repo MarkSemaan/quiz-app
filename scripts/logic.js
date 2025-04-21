@@ -367,6 +367,15 @@ document.addEventListener('DOMContentLoaded', () => {
                         { questionText: 'Which tag defines the document\'s body?', options: ['<head>', '<title>', '<body>', '<meta>'], correctAnswerIndex: 2 },
                         { questionText: 'What tag creates a hyperlink?', options: ['<link>', '<href>', '<a>', '<p>'], correctAnswerIndex: 2 }
                     ]
+                },
+                {
+                    id: "sql-intro",
+                    title: "SQL Introduction Quiz",
+                    questions: [
+                        { questionText: 'If you want to see a list of all the data stored in a table, which SQL command would you use?', options:['SELECT * FROM Table', 'SELECT Column FROM Table', 'UPDATE Table', 'DELETE Table'], correctAnswerIndex: 0},
+                        { questionText: 'Which keyword is used to specify the table you want to retrieve data from?', options: ['SELECT', 'WHERE', 'FROM', 'TABLE'], correctAnswerIndex: 2 },
+                        { questionText:'Which keyword selects only a specific column from a table?', options: ['FROM Column', 'SELECT Column', 'SELECT *', 'WHERE Column'], correctAnswerIndex: 1}
+                    ]
                 }
             ];
             saveQuizzes(sampleQuizzes); // Save to localStorage
